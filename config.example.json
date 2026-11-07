@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.trumpstruth.org/feed",
+  "start": "2026-07-01T00:00:00Z",
+  "end": "2026-10-01T00:00:00Z",
+  "symbol": "BTCUSDT",
+  "window": {
+    "before": 30,
+    "after": 30,
+    "unit": "seconds"
+  },
+  "crawl": {
+    "max_pages": 100,
+    "request_delay_seconds": 0.25,
+    "timeout_seconds": 20,
+    "respect_robots": true,
+    "same_host_only": true
+  },
+  "analysis": {
+    "shock_threshold": 3.0,
+    "min_title_fraction": 0.01,
+    "min_shock_frequency": 0.60,
+    "high_frequency_fraction_of_nyquist": 0.20
+  },
+  "binance": {
+    "base_url": "https://data-api.binance.vision",
+    "request_delay_seconds": 0.08,
+    "timeout_seconds": 20
+  },
+  "output_dir": "results"
+}

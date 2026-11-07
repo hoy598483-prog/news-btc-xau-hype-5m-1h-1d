@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.test_tmp/
+.venv/
+venv/
+config.json
+results/
+outputs/
+*.inspect.ndjson

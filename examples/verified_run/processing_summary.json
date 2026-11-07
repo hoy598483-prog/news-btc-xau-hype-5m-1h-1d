@@ -1,0 +1,13 @@
+{
+  "input_rows": 18990,
+  "valid_rows": 18990,
+  "failed_rows": 0,
+  "unique_events": 2110,
+  "token_rows": 7110,
+  "retained_token_rows": 4,
+  "method": {
+    "minimum_count": "max(3, ceil(valid events * 1%))",
+    "volume_filter": "an event breaks through when any of 5m/1h/1d volume_ratio > 3; token passes when effective breakthrough frequency >= 60%",
+    "p_values": "two-sided one-sample t-test for return; paired t-test for post versus pre volatility"
+  }
+}
