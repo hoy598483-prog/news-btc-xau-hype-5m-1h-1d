@@ -66,6 +66,15 @@ python process_event_metrics.py `
 
 `examples/verified_run/` 保存 2026-01-01 至 2026-07-31 的小型汇总结果，不包含原始帖子全文或完整行情缓存。该次运行包括 2,110 个事件、18,990 个有效的资产/时间阶段观测，任一阶段突破规则保留 4 个 XAUUSDT token。
 
+`artifacts/truthsocial_binance_2026H1/` 保存同一次已验证运行的可复核成品：
+
+- `event_metrics_cleaned.csv`：18,990 行完整清洗事件指标；
+- `asset_horizon_summary.csv`：资产与时间阶段统计；
+- `token_any_horizon_summary.csv`：达到最低出现次数的 token；
+- `token_ranking_top100.csv`：通过任一阶段突破规则的 token；
+- `processing_summary.json`：处理摘要；
+- `news_event_analysis.xlsx`：可直接阅读的 Excel 工作簿。
+
 ## 测试
 
 ```powershell
